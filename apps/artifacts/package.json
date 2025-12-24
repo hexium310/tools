@@ -1,0 +1,33 @@
+{
+  "name": "artifacts",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc -b && vite build",
+    "lint": "eslint --flag unstable_native_nodejs_ts_config .",
+    "preview": "pnpm run build && vite preview",
+    "deploy": "pnpm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "react": "catalog:frontend",
+    "react-dom": "catalog:frontend"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "catalog:build",
+    "@hexium310/eslint-config": "workspace:*",
+    "@hexium310/tsconfig": "workspace:*",
+    "@types/react": "catalog:types",
+    "@types/react-dom": "catalog:types",
+    "@vitejs/plugin-react": "catalog:build",
+    "eslint": "catalog:lint",
+    "globals": "catalog:node",
+    "typescript": "catalog:tsc",
+    "typescript-eslint": "catalog:lint",
+    "vite": "catalog:build",
+    "wrangler": "catalog:dev"
+  },
+  "packageManager": "pnpm@10.26.2"
+}

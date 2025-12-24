@@ -1,0 +1,29 @@
+{
+  "name": "@hexium310/eslint-config",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "eslint.config.ts",
+  "scripts": {
+    "lint": "eslint --flag unstable_native_nodejs_ts_config ."
+  },
+  "dependencies": {
+    "@eslint/compat": "catalog:lint",
+    "@eslint/js": "catalog:lint",
+    "@stylistic/eslint-plugin": "catalog:lint",
+    "eslint": "catalog:lint",
+    "eslint-import-resolver-typescript": "catalog:lint",
+    "eslint-plugin-import": "catalog:lint",
+    "eslint-plugin-import-x": "catalog:lint",
+    "eslint-plugin-react-hooks": "catalog:lint",
+    "eslint-plugin-react-refresh": "catalog:lint",
+    "globals": "catalog:node",
+    "typescript-eslint": "catalog:lint"
+  },
+  "devDependencies": {
+    "@hexium310/tsconfig": "workspace:*",
+    "@types/node": "catalog:types",
+    "typescript": "catalog:tsc"
+  },
+  "packageManager": "pnpm@10.26.2"
+}

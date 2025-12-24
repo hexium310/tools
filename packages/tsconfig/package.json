@@ -1,0 +1,11 @@
+{
+  "name": "@hexium310/tsconfig",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@tsconfig/strictest": "catalog:test",
+    "@tsconfig/vite-react": "catalog:build"
+  },
+  "packageManager": "pnpm@10.26.2"
+}

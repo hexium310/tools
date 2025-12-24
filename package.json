@@ -1,0 +1,11 @@
+{
+  "name": "tools",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "artifacts": "pnpm --filter artifacts",
+    "eslint-config": "pnpm --filter @hexium310/eslint-config",
+    "tsconfig": "pnpm --filter @hexium310/tsconfig"
+  },
+  "packageManager": "pnpm@10.26.2"
+}

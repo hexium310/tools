@@ -1,0 +1,7 @@
+{
+  "extends": ["@hexium310/tsconfig/tsconfig.node.json"],
+  "include": [
+    "eslint.config.ts",
+    "vite.config.ts"
+  ]
+}
